@@ -20,8 +20,18 @@ public class PickAnimal {
         }
         else 
         {
-            System.out.println("Error, invalid input");
+            while(animal != 1 || animal != 2) {
+                System.out.println("Error, invalid input, enter 1 for a dog image, or 2 for a cat image: ");
+                animal = inp.nextInt();
+                if (animal == 1 ) {
+                    System.out.println("DOG ASCII ART HERE");
+                    break;
+                }
+                else if (animal == 2) {
+                    System.out.println("CAT ASCII ART HERE");
+                    break;
+                }
         }
-       
+        }
     }
 }
